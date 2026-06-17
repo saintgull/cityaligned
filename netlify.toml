@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/toronto"
+  to = "/toronto/"
+  status = 301
+
+[[redirects]]
+  from = "/krakow"
+  to = "/krakow/"
+  status = 301
