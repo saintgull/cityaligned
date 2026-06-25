@@ -455,6 +455,7 @@ section + section {
   width: 150px;
   height: 150px;
   object-fit: cover;
+  object-position: center 18%;
   border-radius: 50%;
   display: block;
   margin: 0 auto 0.75rem;
