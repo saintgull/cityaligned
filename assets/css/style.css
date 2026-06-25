@@ -149,6 +149,10 @@ a:hover {
   display: block;
 }
 
+.hero .btn {
+  margin-top: 0.5rem;
+}
+
 /* === Sections === */
 
 section {
@@ -159,7 +163,51 @@ section + section {
   border-top: 1px solid var(--linen-dark);
 }
 
-/* === City Cards (Homepage) === */
+.lede {
+  font-size: 1.15rem;
+}
+
+/* === Page title (Cities / Fellowship) === */
+
+.page-title {
+  padding: 3.5rem 0 1rem;
+  text-align: center;
+}
+
+.page-title h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-title p {
+  max-width: 34em;
+  margin: 0 auto;
+  opacity: 0.7;
+  font-size: 1.05rem;
+}
+
+/* === Social proof === */
+
+.proof {
+  background: var(--linen-dark);
+}
+
+.proof blockquote {
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  max-width: 30em;
+  margin: 0 0 1rem;
+}
+
+.proof cite {
+  display: block;
+  font-style: normal;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+/* === City Cards (Homepage / Cities) === */
 
 .city-grid {
   display: grid;
@@ -212,6 +260,38 @@ section + section {
   font-size: 0.85rem;
   opacity: 0.7;
   margin-bottom: 0;
+}
+
+/* === Map (Cities) === */
+
+#map {
+  height: 460px;
+  width: 100%;
+  border: 1px solid var(--linen-dark);
+  border-radius: 12px;
+  margin: 2rem 0 1rem;
+  background: var(--linen-dark);
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.map-popup {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.map-popup strong {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.map-popup .meta {
+  display: block;
+  opacity: 0.6;
+  font-size: 0.85rem;
+  margin: 0.15rem 0 0.35rem;
 }
 
 /* === City Page Hero === */
@@ -338,6 +418,108 @@ section + section {
   text-align: center;
 }
 
+.site-footer a {
+  color: inherit;
+}
+
+.site-footer a:hover {
+  color: var(--autumn-ember);
+  border-bottom-color: transparent;
+}
+
+/* === About the team === */
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.team-card {
+  text-align: center;
+  width: 180px;
+}
+
+.team-card a {
+  border-bottom: none;
+  color: var(--black);
+}
+
+.team-card a:hover {
+  border-bottom: none;
+}
+
+.team-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 0.75rem;
+  border: 2px solid var(--linen-dark);
+  transition: border-color 0.2s;
+}
+
+.team-card a:hover img {
+  border-color: var(--autumn-ember);
+}
+
+.team-card .name {
+  font-family: 'Fraunces', serif;
+  font-size: 1.05rem;
+}
+
+.team-card .location {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin-top: 0.1rem;
+}
+
+.team-card .linkedin {
+  font-size: 0.8rem;
+  color: var(--autumn-ember);
+  margin-top: 0.35rem;
+}
+
+/* === Newsletter / Contact === */
+
+.newsletter {
+  background: var(--linen-dark);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  max-width: 30em;
+  margin: 1.25rem auto 0;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  min-width: 200px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--linen-dark);
+  border-radius: 4px;
+  background: var(--linen);
+  color: var(--black);
+}
+
+.newsletter-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--autumn-ember);
+}
+
+.newsletter-note {
+  font-size: 0.8rem;
+  opacity: 0.55;
+  margin-top: 0.75rem;
+}
+
 /* === Utility === */
 
 .text-center { text-align: center; }
@@ -361,6 +543,10 @@ section + section {
     padding: 2.5rem 0 1.5rem;
   }
 
+  .page-title h1 {
+    font-size: 2.6rem;
+  }
+
   .city-hero img {
     width: 200px;
     height: 200px;
@@ -373,5 +559,13 @@ section + section {
 
   .site-nav {
     gap: 1rem;
+  }
+
+  #map {
+    height: 360px;
+  }
+
+  .proof blockquote {
+    font-size: 1.25rem;
   }
 }
