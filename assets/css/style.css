@@ -54,6 +54,18 @@ h3 {
 p {
   margin-bottom: 1rem;
   max-width: 38em;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Keep centered and intro text centered, not justified */
+.hero p,
+.page-title p,
+.city-hero .tagline,
+.text-center p {
+  text-align: center;
 }
 
 a {
@@ -138,7 +150,7 @@ a:hover {
 .hero p {
   max-width: 30em;
   margin: 0 auto 2rem;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   opacity: 0.8;
 }
 
