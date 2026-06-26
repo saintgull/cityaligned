@@ -151,7 +151,7 @@ a:hover {
 .hero p {
   max-width: 30em;
   margin: 0 auto 2rem;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   opacity: 0.8;
 }
 
@@ -177,7 +177,7 @@ section + section {
 }
 
 .lede {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
 }
 
 /* === Page title (Cities / Fellowship) === */
@@ -329,7 +329,7 @@ section + section {
 }
 
 .city-hero .tagline {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   opacity: 0.7;
 }
 
